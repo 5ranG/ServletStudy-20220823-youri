@@ -15,7 +15,6 @@ JSP 책자: 자바웹을 다루는 기술
 			HelloServlet	
 			HiServlet
 	포스트맨 https://cloudy-flare-845764.postman.co/
-		로그인: opel22@naver.com / min0324
 		다운로드: https://www.postman.com/downloads/
 	[ src ] >>> [ WEB-INF ]
 		hello.jsp (선언식, 스크립트릿)
