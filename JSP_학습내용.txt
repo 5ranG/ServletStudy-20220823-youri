@@ -55,5 +55,22 @@ JSP 책자: 자바웹을 다루는 기술
 		SingupServlet3.jsp
 	[ src/main/java ] > [ servlet ] > [ auth ] > [api]
 		SignUpApi
-
+220826
+	[ src/main/java ] > [ dto ] > [auth]
+		SignupRequestDto
+	ServletContext 기능 확인 (SignUpApi.java)
+	[ src/main/java ] > [ servlet ] > [ test ]
+		ServiceTestServlet
+	[ src/main/java ] > [ servlet ] > [repository]
+		ApplicationServlet, RequestServlet, SessionServlet, TestServlet (저장소 개념! 쿠키~)
+	[ src/main/java ] > [ filter ]
+		RepositoryFilter
+	[ src ] >>>> [views] > [auth]
+		signin.jsp
+	[ src ] >> [webapp] > [static] > [js] > [ auth ]
+		signin.js
+	[ src/main/java ] > [ servlet ] > [auth]
+		SigninServlet
+	[ src/main/java ] > [ servlet ] > [ auth ] > [api]
+		SignInApi
 
