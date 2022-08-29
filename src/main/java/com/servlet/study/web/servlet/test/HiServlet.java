@@ -8,7 +8,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 
-@WebServlet("/hello")
+@WebServlet("/hi")
 public class HiServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
@@ -16,7 +16,22 @@ public class HiServlet extends HttpServlet {
     public HiServlet() {}
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		response.getWriter().print("Hello Servlet");
+		String name = "김준일";
+		String email = "email@korea.kr";
+		
+		response.setContentType("text/html; charset=utf-8");
+		
+		response.getWriter().print("<html>");
+		response.getWriter().print("<head>");
+		response.getWriter().print("<title>hello servlet</title>");
+		response.getWriter().print("</head>");
+		response.getWriter().print("<body>");
+		response.getWriter().print("<h1>Hello Servlet</h1>");
+		response.getWriter().print("<p>servlet study start</p>");
+		response.getWriter().print("<p>이름: " + name + "</p>");
+		response.getWriter().print("<p>이메일: " + email + "</p>");
+		response.getWriter().print("</body>");
+		response.getWriter().print("</html>");
 	}
 
 }

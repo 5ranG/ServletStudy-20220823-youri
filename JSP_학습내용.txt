@@ -3,20 +3,19 @@ JSP 책자: 자바웹을 다루는 기술
 스프링부트 책자: React.js, 스프링부트, AWS로 배우는 웹개발101 김다정 지음
 
 ◁◁◁◁ 복습 시작
-◀◀◀◀ 복습 완
 220823
 	아파치 메이븐(mvn) ! 인터넷 연결이 되어있어야 합니다. (Alt +f5)
 		프로젝트 우클릭> Configure > Convert to Maven Project>version 보통세자리로
 		다운로드 사이트: https://maven.apache.org/download.cgi
 		MVN Repository 사이트: https://mvnrepository.com/
 	톰캣9 https://tomcat.apache.org/download-90.cgi > tar.gz 설치
-	[ src/main/java ] > [ servlet ]
-		test
+	[ src ]  >> [ java ] > [ com ] > [ servlet ] > [ test ]
 			HelloServlet	
 			HiServlet
+◀◀◀◀ 복습 완
 	포스트맨 https://cloudy-flare-845764.postman.co/
 		다운로드: https://www.postman.com/downloads/
-	[ src ] >>> [ WEB-INF ]
+	[ src ] >> [ wepapp ] > [ test ]
 		hello.jsp (선언식, 스크립트릿)
 	PPT 1~3장 (컨텐츠 타입 앞까지)
 220824
