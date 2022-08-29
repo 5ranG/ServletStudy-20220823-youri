@@ -20,25 +20,27 @@ public class SignUpApi extends HttpServlet {
     public SignUpApi() {
         super();
     }
-    
+
+
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		
 		ServletContext context = request.getServletContext();
-		
+
 		SignupRequestDto signupRequestDto = SignupRequestDto.builder()
-				.userId(request.getParameter("userId"))
-				.userPassword(request.getParameter("userPassword"))
-				.userName(request.getParameter("userName"))
-				.userEmail(request.getParameter("userEmail"))
+				.userId			(request.getParameter("userId"))
+				.userPassword	(request.getParameter("userPassword"))
+				.userName		(request.getParameter("userName"))
+				.userEmail		(request.getParameter("userEmail"))
 				.build();
 
 		context.setAttribute("userData", signupRequestDto);
-		
+
+		System.out.println(signupRequestDto);
+
 		Gson jsonUser = new GsonBuilder().setPrettyPrinting().create();
-		
+
 		response.setContentType("application/json; charset=utf-8");
 		response.getWriter().print(jsonUser.toJson(signupRequestDto));
-
 	}
 
 }
+

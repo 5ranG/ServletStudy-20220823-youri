@@ -7,18 +7,20 @@ signinButton.onclick = () => {
 }
 
 signupButton.onclick = () => {
-	location.href = "/auth/signup"; //get 요청
+	location.href = "/signupservlet3/additon";	
 }
 
-function send(){
+
+
+function send() {
 	const userId = document.querySelector(".user-id").value;
 	const userPassword = document.querySelector(".user-password").value;
-	
+
 	const userJson = JSON.stringify({
-			"userId" : userId,
-			"userPassword" : userPassword
-		});
-	
+		"userId": userId,
+		"userPassword": userPassword	
+	});
+
 	$.ajax({
 		async: false,
 		type: "post",
@@ -28,15 +30,14 @@ function send(){
 		},
 		dataType: "json",
 		success: (response) => {
-			if(response.status){
+			if(response.status) {
 				alert("로그인 성공");
 			}else{
-				alert("사용자 정보를 확인해 주세요.");
+				alert("사용자의 정보를 확인해 주세요.");
 			}
 		},
 		error: (error) => {
-			console.log(error)
+			console.log(error);
 		}
-		
 	});
 }
