@@ -9,17 +9,17 @@ JSP 책자: 자바웹을 다루는 기술
 		다운로드 사이트: https://maven.apache.org/download.cgi
 		MVN Repository 사이트: https://mvnrepository.com/
 	톰캣9 https://tomcat.apache.org/download-90.cgi > tar.gz 설치
-	[ src ]  >> [ java ] > [ com ] > [ servlet ] > [ test ]
-			HelloServlet	
-			HiServlet
-◀◀◀◀ 복습 완
+	[ src ]  >>> [ servlet ] > [ test ]
+		HelloServlet	
+		HiServlet
 	포스트맨 https://cloudy-flare-845764.postman.co/
 		다운로드: https://www.postman.com/downloads/
 	[ src ] >> [ wepapp ] > [ test ]
 		hello.jsp (선언식, 스크립트릿)
 	PPT 1~3장 (컨텐츠 타입 앞까지)
+◀◀◀◀ 복습 완
 220824
-	[ src/main/java ] > [ servlet ] > [ test ]
+	[ src] >>> [ servlet ] > [ test ]
 		포스트맨 + ContentTypeServlet (request) & dispatcher-test.html
 	[ src ] >> [ webapp ]
 		signup.jsp + signupService.jsp
