@@ -77,7 +77,14 @@ JSP 책자: 자바웹을 다루는 기술
 	heidisql 설치: https://www.heidisql.com/
 		앤드포인트_주소: web-study.ca0okwo8st6n.ap-northeast-2.rds.amazonaws.com
 	데이터베이스 설명: http://www.tcpschool.com/mysql/DB
-	[heidisql] back-20220829
-		user_mst
-		쿼리 ctrl + shift + f9 (실행)
+	[heidisql] 조합 한글 글자깨짐 utf8mb4_general_ci
+		back-20220829
+			user_mst
+			쿼리 ctrl + shift + f9 (실행)
+220830
+			product_mst 
+			category_mst
+			order_mst
+			user_dtl : 트리거
+		nation
 
