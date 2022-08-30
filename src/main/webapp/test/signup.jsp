@@ -21,7 +21,7 @@
 	</style>
 	</head>
 	<body>
-		<form action="/signupService.jsp">
+		<form action="/test/signupService.jsp">
 			<table>
 				<thead>
 					<tr>

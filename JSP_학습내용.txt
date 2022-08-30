@@ -2,7 +2,6 @@
 JSP 책자: 자바웹을 다루는 기술
 스프링부트 책자: React.js, 스프링부트, AWS로 배우는 웹개발101 김다정 지음
 
-◁◁◁◁ 복습 시작
 220823
 	아파치 메이븐(mvn) ! 인터넷 연결이 되어있어야 합니다. (Alt +f5)
 		프로젝트 우클릭> Configure > Convert to Maven Project>version 보통세자리로
@@ -17,20 +16,21 @@ JSP 책자: 자바웹을 다루는 기술
 	[ src ] >> [ wepapp ] > [ test ]
 		hello.jsp (선언식, 스크립트릿)
 	PPT 1~3장 (컨텐츠 타입 앞까지)
-◀◀◀◀ 복습 완
 220824
 	[ src] >>> [ servlet ] > [ test ]
 		포스트맨 + ContentTypeServlet (request) & dispatcher-test.html
-	[ src ] >> [ webapp ]
-		signup.jsp + signupService.jsp
+	[ src ] >> [ webapp ] > [test]
+		signupService.jsp & signup.jsp
 	[ src/main/java ] > [ servlet ]
 		test
-			SingupModel2 signup2.jsp
+			SingupModel2.java [& signup2.jsp]
 		auth
-			SignupServlet
-	HTTP프로토컬 get oust pu delete
-	[ src/main/java ] > [ filter ]
-		CharacterEncodingFilter
+			SignupServlet.java [& signup.jsp]
+	HTTP프로토콜 Get Post Put Delete 이론
+	[ src/main/java ] > [ filter ] >>>
+		CharacterEncodingFilter.java
+◁◁◁◁ 복습 시작
+◀◀◀◀ 복습 완
 220825
 	[ src ] >>>> [views] > [board]
 		board_insert.jsp
