@@ -147,7 +147,7 @@ INSERT INTO
 		# INNER은 교집합
 	;
 	Where
-		om.order_code > 1
+		om.order_code > 1;
 		AND pm.product_price > 20000;
 	
 	DELETE

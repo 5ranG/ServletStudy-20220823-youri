@@ -87,4 +87,15 @@ JSP 책자: 자바웹을 다루는 기술
 			order_mst
 			user_dtl : 트리거
 		nation
+220831
+	jdbc 이론 설명 https://dyjung.tistory.com/50
+	[ src/main/java ] > [ domain ] > [ db ]
+		DBConnectionMgr.java : db 연결세팅 **싱글톤 한번 더 공부
+	[ src/main/java ] > [ domain ] > [ user ]
+		UserDBTest.java
+		UserDBTest.java 위에꺼 실습
+		UserRepository.java & UserMain
+	[ src ] >>>> [views] > [auth]
+		user-management.jsp [& user-management.css & UserManagementServlet & user-management.js]
+
 
