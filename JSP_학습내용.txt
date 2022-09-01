@@ -30,7 +30,6 @@ JSP 책자: 자바웹을 다루는 기술
 	[ src/main/java ] > [ filter ] >>>
 		CharacterEncodingFilter.java
 ◁◁◁◁ 복습 시작
-◀◀◀◀ 복습 완
 220825
 	[ src ] >>>> [views] > [board]
 		board_insert.jsp
@@ -42,7 +41,7 @@ JSP 책자: 자바웹을 다루는 기술
 		board_insert.js (제이쿼리)
 	[ src/main/java ] > [ servlet ] > [ board ] > [api]
 		BoardInsertApi
-	[ src ] >> [ webapp ]
+	[ src ] >> [ webapp ] > [ WEB-INF ] > [ views ]
 		signup3.jsp
 	[ src/main/java ] > [ servlet ] > [ auth ]
 		SignupServlet2
@@ -54,6 +53,7 @@ JSP 책자: 자바웹을 다루는 기술
 		SingupServlet3.jsp
 	[ src/main/java ] > [ servlet ] > [ auth ] > [api]
 		SignUpApi
+◀◀◀◀ 복습 완
 220826
 	[ src/main/java ] > [ dto ] > [auth]
 		SignupRequestDto

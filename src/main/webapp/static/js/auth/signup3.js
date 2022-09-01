@@ -25,10 +25,10 @@ function send(user){
 		success: (response) => {
 			alert("회원가입 성공");
 			document.querySelector("body").innerHTML = `
-				<h1>${response.userId}</h1>
-				<h1>${response.userPassword}</h1>
-				<h1>${response.userName}</h1>
-				<h1>${response.userEmail}</h1>
+				<h1>아이디: ${response.userId}</h1>
+				<h1>비밀번호: ${response.userPassword}</h1>
+				<h1>이름: ${response.userName}</h1>
+				<h1>이메일: ${response.userEmail}</h1>
 			`
 		},
 		error: (error) => {				//요청 또는 응답이 실패하였을 때 오류처리
