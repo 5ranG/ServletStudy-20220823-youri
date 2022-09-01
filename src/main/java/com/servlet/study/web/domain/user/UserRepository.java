@@ -34,7 +34,17 @@ public class UserRepository {
 		
 		try {
 			con = pool.getConnection();
-			sql = " select * from user_mst ";
+			sql = " SELECT		\r\n"
+					+ "	um.user_code,\r\n"
+					+ "	um.user_id,\r\n"
+					+ "	um.user_password,\r\n"
+					+ "	um.user_name,\r\n"
+					+ "	um.user_email,\r\n"
+					+ "	ud.user_phone,\r\n"
+					+ "	ud.user_address\r\n"
+					+ "FROM\r\n"
+					+ "	user_mst um\r\n"
+					+ "	LEFT OUTER JOIN user_dtl ud ON(ud.user_code = um.user_code);";
 			pstmt = con.prepareStatement(sql);
 			rs = pstmt.executeQuery();
 			rsmd = rs.getMetaData();

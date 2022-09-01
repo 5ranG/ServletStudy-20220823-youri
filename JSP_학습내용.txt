@@ -97,5 +97,13 @@ JSP 책자: 자바웹을 다루는 기술
 		UserRepository.java & UserMain
 	[ src ] >>>> [views] > [auth]
 		user-management.jsp [& user-management.css & UserManagementServlet & user-management.js]
+220901
+		[& UserManagementApi]
+	[ src/main/java ] > [ service ]
+		UserService, UserServiceImpl
+	[ src/main/java ] > [ filter ]
+		ServletContextFilter
+	위 내용 프로젝트 생성 후 실습
+		ServletStudy-test-project-youri.project
 
 
