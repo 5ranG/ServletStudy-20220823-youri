@@ -82,4 +82,57 @@ public class UserRepository {
 		return list;
 	}
 
+	public int checkUserId(String userId) {
+		String sql = null;
+		Connection con = null;
+		PreparedStatement pstmt = null;
+		ResultSet rs = null;
+
+		int result = 0;
+		
+		try {
+			con = pool.getConnection();
+			sql = " select count(*) from user_mst where user_id = ? ";
+			pstmt = con.prepareStatement(sql);
+			pstmt.setString(1, userId);
+			rs = pstmt.executeQuery();
+			
+			if(rs.next()) {
+				result = rs.getInt(1);
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			pool.freeConnection(con, pstmt, rs);
+		}
+		
+		return result;
+	}
+
+	public int save(User user) {
+		int result = 0;
+		String sql = null;
+		Connection con = null;
+		PreparedStatement pstmt = null;
+		
+		try {
+			con = pool.getConnection();
+			sql = "insert into user_mst values(0, ?, ?, ?, ?)";
+			pstmt = con.prepareStatement(sql);
+			pstmt.setString(1, user.getUser_id());
+			pstmt.setString(2, user.getUser_password());
+			pstmt.setString(3, user.getUser_name());
+			pstmt.setString(4, user.getUser_email());
+			result = pstmt.executeUpdate();
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			pool.freeConnection(con, pstmt);
+		}
+		
+		return result;
+	}
+
 }
+
+

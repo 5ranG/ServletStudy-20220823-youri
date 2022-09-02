@@ -1,4 +1,4 @@
-package com.servlet.study.web.servlet.auth;
+package com.servlet.study.web.servlet.user;
 
 import java.io.IOException;
 import javax.servlet.ServletException;

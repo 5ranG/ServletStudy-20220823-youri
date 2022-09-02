@@ -96,14 +96,38 @@ JSP 책자: 자바웹을 다루는 기술
 		UserDBTest.java 위에꺼 실습
 		UserRepository.java & UserMain
 	[ src ] >>>> [views] > [auth]
-		user-management.jsp [& user-management.css & UserManagementServlet & user-management.js]
+		user-management.jsp & user-management.css & UserManagementServlet & user-management.js]
 220901
-		[& UserManagementApi]
+	[ src/main/java ] > [ servlet ] > [ user ] > [api]
+		UserManagementApi
 	[ src/main/java ] > [ service ]
 		UserService, UserServiceImpl
 	[ src/main/java ] > [ filter ]
 		ServletContextFilter
 	위 내용 프로젝트 생성 후 실습
 		ServletStudy-test-project-youri.project
+220902
+	[ src/main/java ] > [ domain ] > [ user ]
+		UserRepository.java
+	[ src/main/java ] > [ service ]
+		UserService, UserServiceImpl
+	[ src/main/java ] > [ servlet ] > [ user ] > [api]
+		CheckUseridApi.java
+	[ static ] > [ js ] > [ auth ]
+		user-management.js
+	[ src/main/java ] > [ domain ] > [user]
+		User.java
+	[ src/main/java ] > [ servlet ] > [ user ] > [api]
+		UserApi.java
+	[ src/main/java ] > [ service ]
+		UserService, UserServiceImpl
+	[ src/main/java ] > [ domain ] > [ user ]
+		UserRepository.java
+	[ src/main/java ] > [ servlet ] > [ user ] > [api]
+		UserApi.java
 
 
+
+
+
+		

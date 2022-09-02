@@ -19,7 +19,7 @@
 					<input type="text"  class="user-input" placeholder="비밀번호">
 					<input type="text"  class="user-input" placeholder="이름">
 					<input type="text"  class="user-input" placeholder="이메일">
-					<button class="add-button">추가</button>
+					<button type="button" class="add-button">추가</button>
 				</div>
 				<table>
 					<thead>

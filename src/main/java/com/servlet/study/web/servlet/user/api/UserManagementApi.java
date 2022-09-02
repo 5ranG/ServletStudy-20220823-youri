@@ -1,4 +1,4 @@
-package com.servlet.study.web.servlet.auth.api;
+package com.servlet.study.web.servlet.user.api;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -13,7 +13,7 @@ import javax.servlet.http.HttpServletResponse;
 import com.servlet.study.web.service.UserService;
 import com.servlet.study.web.service.UserServiceImpl;
 
-@WebServlet("/api/v1/auth/management/users")
+@WebServlet("/api/v1/user/management/users")
 public class UserManagementApi extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
