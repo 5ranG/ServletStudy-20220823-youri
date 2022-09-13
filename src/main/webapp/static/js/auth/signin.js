@@ -3,16 +3,6 @@ const signinButton = document.querySelector(".signin-button");
 const signupButton = document.querySelector(".signup-button");
 
 signinButton.onclick = () => {
-	send();
-}
-
-signupButton.onclick = () => {
-	location.href = "/signupservlet3/additon";	
-}
-
-
-
-function send() {
 	const userId = document.querySelector(".user-id").value;
 	const userPassword = document.querySelector(".user-password").value;
 
@@ -41,3 +31,8 @@ function send() {
 		}
 	});
 }
+
+signupButton.onclick = () => {
+	location.href = "/signupservlet3/additon";	
+}
+

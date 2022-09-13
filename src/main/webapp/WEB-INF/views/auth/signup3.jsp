@@ -5,7 +5,7 @@
 	<head>
 	<meta charset="UTF-8">
 	<title>회원가입</title>
-	<link rel="stylesheet" href="/static/css/board.css">
+	<link rel="stylesheet" href="/static/css/signup3.css">
 	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 	</head>
 	<body>

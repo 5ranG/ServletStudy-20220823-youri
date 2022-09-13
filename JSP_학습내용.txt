@@ -30,7 +30,6 @@ JSP 책자: 자바웹을 다루는 기술
 	[ src/main/java ] > [ filter ] >>>
 		CharacterEncodingFilter.java
 220825
-◁◁◁◁ 복습 시작
 	[ src ] >>>> [views] > [board]
 		board_insert.jsp
 	[ src ] >> [webapp] > [static] > [css]
@@ -53,7 +52,7 @@ JSP 책자: 자바웹을 다루는 기술
 		SingupServlet3.jsp
 	[ src/main/java ] > [ servlet ] > [ auth ] > [api]
 		SignUpApi
-◀◀◀◀ 복습 완
+◁◁◁◁ 복습 시작
 220826
 	[ src/main/java ] > [ dto ] > [auth]
 		SignupRequestDto
@@ -72,6 +71,7 @@ JSP 책자: 자바웹을 다루는 기술
 		SigninServlet
 	[ src/main/java ] > [ servlet ] > [ auth ] > [api]
 		SignInApi
+◀◀◀◀ 복습 완료
 220829
 	aws > 데이터베이스: RDS > 데이터베이스
 	heidisql 설치: https://www.heidisql.com/
