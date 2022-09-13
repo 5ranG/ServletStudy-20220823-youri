@@ -26,7 +26,7 @@ public class ServiceTestServlet extends HttpServlet{
 		getServletContext().setAttribute("servletApplicationData", "우리가 저장한 데이터");
 		doGet(req, resp);
 	}
-	
+
 	protected void doGet(HttpServletRequest req, HttpServletRequest resp) throws ServletException{
 		System.out.println("get 요청");
 		System.out.println(getServletContext().getAttribute("servletApplicationData"));

@@ -132,6 +132,50 @@ public class UserRepository {
 		
 		return result;
 	}
+	
+	public int update(User user) {
+		String sql = null;
+		Connection con = null;
+		PreparedStatement pstmt = null;
+		int result = 0;
+		
+		try {
+			con = pool.getConnection();
+			sql = "update user_dtl set user_phone = ?, user_address = ? where user_code = ?";
+			pstmt = con.prepareStatement(sql);
+			pstmt.setString(1, user.getUser_phone());
+			pstmt.setString(2, user.getUser_address());
+			pstmt.setInt(3, user.getUser_code());
+			result = pstmt.executeUpdate();
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			pool.freeConnection(con, pstmt);
+		}
+		
+		return result;
+	}
+	
+	public int delete(int userCode) {
+		String sql = null;
+		Connection con = null;
+		PreparedStatement pstmt = null;
+		int result = 0;
+		
+		try {
+			con = pool.getConnection();
+			sql = "delete from user_mst where user_code = ?";
+			pstmt = con.prepareStatement(sql);
+			pstmt.setInt(1, userCode);
+			result = pstmt.executeUpdate();
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			pool.freeConnection(con, pstmt);
+		}
+		
+		return result;
+	}
 
 }
 

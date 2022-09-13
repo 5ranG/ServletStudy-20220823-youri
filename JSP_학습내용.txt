@@ -29,8 +29,8 @@ JSP 책자: 자바웹을 다루는 기술
 	HTTP프로토콜 Get Post Put Delete 이론
 	[ src/main/java ] > [ filter ] >>>
 		CharacterEncodingFilter.java
-◁◁◁◁ 복습 시작
 220825
+◁◁◁◁ 복습 시작
 	[ src ] >>>> [views] > [board]
 		board_insert.jsp
 	[ src ] >> [webapp] > [static] > [css]
@@ -125,8 +125,18 @@ JSP 책자: 자바웹을 다루는 기술
 		UserRepository.java
 	[ src/main/java ] > [ servlet ] > [ user ] > [api]
 		UserApi.java
-
-
+220913
+	[ static ] > [ js ] > [ auth ]
+		user-management.js
+	[ static ] > [css ] > [ auth ]
+		user-management.css
+	[ src ] >>>> [views] > [auth]
+		user-management.jsp
+	[ src/main/java ] > [ servlet ] > [ user ] > [api]
+		UserUpdateApi.java
+	[ src/main/java ] > [ servlet ] > [ user ] > [api]
+		UserDeleteApi.java
+	
 
 
 

@@ -6,7 +6,7 @@
 		<meta charset="UTF-8">
 		<title>사용자 관리 페이지</title>
 		<link rel="stylesheet" href="/static/css/user-management.css">
-		<script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 	</head>
 	<body>
 		<div id="container">
@@ -31,6 +31,7 @@
 							<th>user_email</th>
 							<th>user_phone</th>
 							<th>user_address</th>
+							<th>update</th>
 							<th>delete</th>
 						</tr>
 					</thead>
