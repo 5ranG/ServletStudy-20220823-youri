@@ -7,22 +7,19 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.servlet.study.web.domain.user.User;
 import com.servlet.study.web.domain.user.UserRepository;
+import com.servlet.study.web.servlet.dto.PrincipalUser;
 
 import lombok.NonNull;
 import lombok.RequiredArgsConstructor;
 
 @RequiredArgsConstructor
-public class UserServiceImpl implements UserService{
+public class UserServiceImpl implements UserService {
 
 	@NonNull
-	private final UserRepository userRepository; //필수생성자
+	private final UserRepository userRepository;
 	
 	@Override
 	public String getUserList() {
-//		Gson gson = new GsonBuilder()
-//				.setPrettyPrinting()
-//				.serializeNulls()
-//				.create();
 		return getGson().toJson(userRepository.getUserList());
 	}
 
@@ -31,22 +28,10 @@ public class UserServiceImpl implements UserService{
 		int result = userRepository.checkUserId(userId);
 		
 		Map<String, Object> resultMap = new HashMap<String, Object>();
-		resultMap.put("checkFlag", result > 0 ? false : true); //1이면 회원가입 불가능
+		resultMap.put("checkFlag", result > 0 ? false : true);
 		
 		return getGson().toJson(resultMap);
 	}
-	
-
-	@Override
-	public String updateUser(User user) {
-		int result = userRepository.update(user);
-		
-		Map<String, Object> resultMap = new HashMap<String, Object>();
-		resultMap.put("status", result > 0); 
-
-		return getGson().toJson(resultMap);
-	}
-	
 	
 	@Override
 	public String addUser(User user) {
@@ -57,8 +42,17 @@ public class UserServiceImpl implements UserService{
 		
 		return getGson().toJson(resultMap);
 	}
-
-
+	
+	@Override
+	public String updateUser(User user) {
+		int result = userRepository.update(user);
+		
+		Map<String, Object> resultMap = new HashMap<String, Object>();
+		resultMap.put("status", result > 0);
+		
+		return getGson().toJson(resultMap);
+	}
+	
 	@Override
 	public String deleteUser(int userCode) {
 		int result = userRepository.delete(userCode);
@@ -69,12 +63,27 @@ public class UserServiceImpl implements UserService{
 		return getGson().toJson(resultMap);
 	}
 	
+	@Override
+	public PrincipalUser signin(String userId, String password) {
+		User user = userRepository.findUserByUserId(userId);
+		if(user == null) {
+			return null;
+		}
+		if(user.getUser_password().equals(password)) {
+			return user.toPrincipal();
+		}else {
+			return null;
+		}
+	}
+	
 	private Gson getGson() {
 		return new GsonBuilder()
 				.setPrettyPrinting()
 				.serializeNulls()
 				.create();
 	}
-
 	
+	
+
 }
+

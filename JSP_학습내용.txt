@@ -136,8 +136,13 @@ JSP 책자: 자바웹을 다루는 기술
 		UserUpdateApi.java
 	[ src/main/java ] > [ servlet ] > [ user ] > [api]
 		UserDeleteApi.java
-	
-
-
-
-		
+220914
+		PrincipalUser
+		AuthenticationFilter
+		Logout
+	session에 대한거 함
+	[ src/main/java ] > [ cookie ]
+		CookieTestServlet
+	[views]	
+		cookie.jsp
+	생활코딩

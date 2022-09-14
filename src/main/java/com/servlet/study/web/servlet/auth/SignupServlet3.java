@@ -7,7 +7,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet("/signupservlet3/additon")
+@WebServlet("/auth/signup3")
 public class SignupServlet3 extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 

@@ -22,6 +22,7 @@ signinButton.onclick = () => {
 		success: (response) => {
 			if(response.status) {
 				alert("로그인 성공");
+				location.href = "/auth";
 			}else{
 				alert("사용자의 정보를 확인해 주세요.");
 			}
@@ -33,6 +34,6 @@ signinButton.onclick = () => {
 }
 
 signupButton.onclick = () => {
-	location.href = "/signupservlet3/additon";	
+	location.href = "/auth/signup";	
 }
 
